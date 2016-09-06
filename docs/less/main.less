@@ -1,0 +1,21 @@
+/*
+LESS tutorial: http://webdesign.tutsplus.com/articles/get-into-less-the-programmable-stylesheet-language--webdesign-5216
+
+This file is a combination of all the less files. Only this file is required to be added to the HTML page.
+
+Add the two lines below to HTML page to make less works.
+<script src="js/less/less.js" type="text/javascript"></script>
+<link rel="stylesheet/less" type="text/css" href="css/main.less">
+
+Generate css from less
+
+$ npm install -g less
+$ lessc main.less > main.ouput.css
+
+*/
+
+@import "./settings.less";
+
+@import "./common.less";
+
+@import "../components/main/ui.less";
